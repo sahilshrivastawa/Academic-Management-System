@@ -1,0 +1,524 @@
+.page-container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.page-header h1 {
+  margin: 0;
+  font-size: 28px;
+  color: #333;
+}
+
+.page-header p {
+  margin: 5px 0 0 0;
+  color: #666;
+}
+
+.admin-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.btn-import {
+  padding: 12px 24px;
+  background: #0f172a;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.btn-back {
+  padding: 12px 18px;
+  background: #334155;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.btn-back:hover {
+  background: #1e293b;
+}
+
+.btn-import:disabled {
+  opacity: 0.65;
+  cursor: not-allowed;
+}
+
+.import-hint-box,
+.import-result-box {
+  background: #eef2ff;
+  border: 1px solid #c7d2fe;
+  border-radius: 8px;
+  padding: 12px 14px;
+  margin-bottom: 16px;
+  color: #1e1b4b;
+}
+
+.import-hint-box p,
+.import-result-box p {
+  margin: 4px 0;
+}
+
+.import-result-box ul {
+  margin: 8px 0 0;
+  padding-left: 20px;
+}
+
+.btn-add {
+  padding: 12px 24px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.btn-add:hover {
+  transform: translateY(-2px);
+}
+
+.error-banner {
+  background-color: #fee;
+  color: #c33;
+  padding: 12px 16px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.ai-dashboard-grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.ai-card {
+  grid-column: span 6;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.ai-summary-card {
+  grid-column: span 12;
+}
+
+.ai-card h2 {
+  margin: 0 0 10px;
+  color: #1f2937;
+  font-size: 20px;
+}
+
+.ai-card p {
+  margin: 0;
+  color: #4b5563;
+}
+
+.ai-input {
+  width: 100%;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  padding: 10px;
+  resize: vertical;
+  font-size: 14px;
+  margin-bottom: 12px;
+}
+
+.ai-input:focus {
+  outline: none;
+  border-color: #667eea;
+}
+
+.ai-predict-btn {
+  margin-bottom: 10px;
+}
+
+.ai-prediction-result p {
+  margin-top: 8px;
+}
+
+.ai-performance-card {
+  grid-column: span 12;
+}
+
+.ai-performance-inputs {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+  margin-top: 10px;
+}
+
+.ai-performance-inputs label {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  color: #334155;
+  font-size: 14px;
+}
+
+.ai-performance-inputs input {
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  padding: 10px;
+  font-size: 14px;
+}
+
+.ai-performance-inputs input:focus {
+  outline: none;
+  border-color: #667eea;
+}
+
+.ai-performance-inputs label:last-of-type,
+.ai-performance-inputs button {
+  grid-column: span 2;
+}
+
+.ai-performance-result {
+  margin-top: 10px;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  padding: 12px;
+}
+
+.ai-performance-result p {
+  margin-top: 8px;
+}
+
+.ai-error {
+  color: #dc2626 !important;
+  margin-top: 6px !important;
+}
+
+.ai-metrics-grid {
+  margin-top: 16px;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.ai-metric {
+  background: #f8fafc;
+  border-radius: 8px;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.ai-metric span {
+  color: #64748b;
+  font-size: 12px;
+}
+
+.ai-metric strong {
+  color: #0f172a;
+  font-size: 20px;
+}
+
+.ai-large-value {
+  margin: 10px 0;
+  color: #111827;
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.ai-recommendations {
+  margin: 8px 0 0;
+  padding-left: 20px;
+  color: #374151;
+}
+
+.ai-recommendations li {
+  margin-bottom: 8px;
+}
+
+.ai-chatbot-card {
+  grid-column: span 12;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 12px;
+}
+
+.chatbot-window {
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  padding: 12px;
+  height: 220px;
+  overflow-y: auto;
+  background: #f8fafc;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.chat-bubble {
+  max-width: 80%;
+  padding: 10px 12px;
+  border-radius: 10px;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.chat-user {
+  margin-left: auto;
+  background: #667eea;
+  color: #fff;
+}
+
+.chat-assistant {
+  margin-right: auto;
+  background: #e2e8f0;
+  color: #1e293b;
+}
+
+.chatbot-input-row {
+  display: flex;
+  gap: 10px;
+}
+
+.chatbot-input-row input {
+  flex: 1;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  padding: 10px;
+  font-size: 14px;
+}
+
+.chatbot-input-row input:focus {
+  outline: none;
+  border-color: #667eea;
+}
+
+@media (max-width: 992px) {
+  .ai-card,
+  .ai-summary-card,
+  .ai-chatbot-card {
+    grid-column: span 12;
+  }
+
+  .ai-metrics-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .ai-performance-inputs {
+    grid-template-columns: 1fr;
+  }
+
+  .ai-performance-inputs label:last-of-type,
+  .ai-performance-inputs button {
+    grid-column: span 1;
+  }
+
+  .ai-chatbot-card {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .chatbot-input-row {
+    flex-direction: column;
+  }
+}
+
+.loading {
+  text-align: center;
+  padding: 40px;
+  font-size: 18px;
+  color: #666;
+}
+
+.table-container {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.data-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.data-table thead {
+  background-color: #f8f9fa;
+}
+
+.data-table th {
+  padding: 16px;
+  text-align: left;
+  font-weight: 600;
+  color: #333;
+  border-bottom: 2px solid #dee2e6;
+}
+
+.data-table td {
+  padding: 16px;
+  border-bottom: 1px solid #dee2e6;
+  color: #555;
+}
+
+.data-table tbody tr:hover {
+  background-color: #f8f9fa;
+}
+
+.data-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.btn-edit,
+.btn-delete {
+  padding: 6px 12px;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+  cursor: pointer;
+  margin-right: 8px;
+  transition: opacity 0.2s;
+}
+
+.btn-edit {
+  background-color: #667eea;
+  color: white;
+}
+
+.btn-delete {
+  background-color: #dc3545;
+  color: white;
+}
+
+.btn-edit:hover,
+.btn-delete:hover {
+  opacity: 0.8;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  margin-top: 24px;
+}
+
+.pagination button {
+  padding: 8px 16px;
+  background-color: white;
+  border: 1px solid #dee2e6;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.pagination button:hover:not(:disabled) {
+  background-color: #f8f9fa;
+}
+
+.pagination button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.pagination span {
+  color: #666;
+  font-weight: 500;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: white;
+  padding: 32px;
+  border-radius: 12px;
+  width: 90%;
+  max-width: 500px;
+  max-height: 90vh;
+  overflow-y: auto;
+}
+
+.modal-content h2 {
+  margin: 0 0 24px 0;
+  color: #333;
+}
+
+.modal-content .form-group {
+  margin-bottom: 20px;
+}
+
+.modal-content .form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 500;
+  color: #555;
+}
+
+.modal-content .form-group input,
+.modal-content .form-group select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.modal-content .form-group input:focus,
+.modal-content .form-group select:focus {
+  outline: none;
+  border-color: #667eea;
+}
+
+.modal-actions {
+  display: flex;
+  gap: 12px;
+  justify-content: flex-end;
+  margin-top: 24px;
+}
+
+.btn-cancel,
+.btn-submit {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.btn-cancel {
+  background-color: #6c757d;
+  color: white;
+}
+
+.btn-submit {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+}
+
+.btn-cancel:hover,
+.btn-submit:hover {
+  opacity: 0.9;
+}

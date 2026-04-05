@@ -1,0 +1,38 @@
+# Dependencies
+node_modules/
+/.pnp
+.pnp.js
+
+# Frontend
+/myits-frontend/dist
+/myits-frontend/.env.local
+/myits-frontend/.env
+
+# Backend
+/myits-backend/target/
+/myits-backend/.classpath
+/myits-backend/.project
+/myits-backend/.settings/
+/myits-backend/.vscode/
+/myits-backend/*.iml
+/myits-backend/.idea/
+/myits-backend/data/myitsdb*
+
+# OS
+.DS_Store
+Thumbs.db
+.env
+.env.local
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
