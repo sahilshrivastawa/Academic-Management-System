@@ -43,7 +43,7 @@ public class StudentBulkImportServiceImpl implements StudentBulkImportService {
         private final String email;
     }
 
-    private static final String DEFAULT_PASSWORD = "ChangeMe@123";
+    private static final String DEFAULT_PASSWORD = "Changeme@123";
     private static final Set<String> IMPORTABLE_KEYS = Set.of(
             "name", "email", "password", "enrollmentno", "rollno", "branch",
             "academicyear", "yearsection", "course", "mobileno", "house"
@@ -155,9 +155,7 @@ public class StudentBulkImportServiceImpl implements StudentBulkImportService {
                 throw new ApiException("Email belongs to non-student account: " + email);
             }
             user.setName(name);
-            if (!password.isBlank()) {
-                user.setPassword(passwordEncoder.encode(password));
-            }
+            user.setPassword(passwordEncoder.encode(password.isBlank() ? DEFAULT_PASSWORD : password));
             userRepository.save(user);
         }
 
